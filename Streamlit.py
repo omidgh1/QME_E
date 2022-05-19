@@ -7,6 +7,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+import sklearn
 from sklearn.linear_model import Ridge, LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
