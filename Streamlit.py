@@ -7,19 +7,9 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
-import plotly.graph_objects as go
-import plotly.express as px
-from plotly.subplots import make_subplots
-from plotly.colors import n_colors
 from sklearn.linear_model import Ridge, LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
-from statsmodels.tsa.ar_model import AutoReg
-from statsmodels.tsa.arima.model import ARIMA
-from statsmodels.stats.stattools import medcouple
-import math
-import scipy.stats as stats
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
