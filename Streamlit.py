@@ -7,19 +7,11 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
-import plotly.graph_objects as go
-import plotly.express as px
-from plotly.subplots import make_subplots
-from plotly.colors import n_colors
+import sklearn
 from sklearn.linear_model import Ridge, LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
-from statsmodels.tsa.ar_model import AutoReg
-from statsmodels.tsa.arima.model import ARIMA
-from statsmodels.stats.stattools import medcouple
 import math
-import scipy.stats as stats
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
@@ -34,7 +26,7 @@ st.title('Group E')
 # In[3]:
 
 
-df = pd.read_csv('C:/Users/omidg/Downloads/numerical_info_final.csv')
+df = pd.read_csv('numerical_info_final.csv')
 del df['Unnamed: 0']
 del df['Unnamed: 0.1']
 numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
